@@ -62,6 +62,12 @@
     "typescript": "^3.8.3"
   },
   "jest": {
+    "collectCoverageFrom": [
+      "src/pages/**/*.tsx",
+      "src/components/**/*.tsx",
+      "src/hooks/**/*.tsx",
+      "!src/hooks/index.tsx"
+    ],
     "preset": "react-native",
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
